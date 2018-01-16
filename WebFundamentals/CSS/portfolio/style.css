@@ -1,82 +1,140 @@
 body {
-    background: #6f5964;
+    background: radial-gradient(#6f5964, black);
     font-family: Verdana;
 }
 
 #title {
     background: #f9f9f9;
+    display: block;
 }
 
-#slogan {
-    background: #f9f9f9;
+#title h1 {
+    font-family: "Comic Sans MS";
+    text-align: left;
+}
+
+#title h2 {
+    text-align: right;
 }
 
 #photo {
-    background: #c0c0c0;
     width: 40%;
+    border: 5px solid #c0c0c0;
     display: inline-block;
 }
 
 #about {
     background: linear-gradient(to right, white , #daccd9);
-    width: 60%;
+    width: 55%;
+    height: 346px;
+    vertical-align: top;
     display: inline-block;
 }
 
 #about h2 {
     color: white;
     background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    margin: 0px;
 }
 
-#box-1 {
-    background: linear-gradient(to right, white , #daccd9);
+a.button {
+    color: white;
+    background: green;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin-left: 35%;
+    border-radius: 5px;
+}
+
+#box-1, #box-2, #box-3 {
+    margin: 10px;
     width: 30%;
+    height: 730px;
+    background: linear-gradient(to right, white , #daccd9);
+    vertical-align: top;
     display: inline-block;
 }
 
-#box-1 h2, h3 {
+#box-1 h2 {
     color: white;
     background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    margin: 0px;
 }
 
-#box-1 a {
+#box-1 h3 {
     color: white;
-    background: green;
+    background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    padding: 5px;
 }
 
-#box-2 {
+#box-1 #tech {
     background: linear-gradient(to right, white , #daccd9);
-    width: 30%;
+    width: 100%;
+    height: 250px;
     display: inline-block;
 }
 
-#box-2 h2, h3 {
+#box-1 #tech img {
+    width: 16%;
+}
+
+#box-2 h2 {
     color: white;
     background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    margin: 0px;
 }
 
-#box-2 a {
+#box-2 h3 {
     color: white;
-    background: green;
+    background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    padding: 5px;
 }
 
-#box-3 {
+#box-2 #tech {
     background: linear-gradient(to right, white , #daccd9);
-    width: 30%;
+    width: 100%;
+    height: 250px;
     display: inline-block;
 }
 
-#box-3 h2, h3 {
-    color: white;
-    background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+#box-2 #tech img {
+    width: 16%;
 }
 
-#box-3 a {
+#box-3 h2 {
     color: white;
-    background: green;
+    background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    margin: 0px;
+}
+
+#box-3 h3 {
+    color: white;
+    background: linear-gradient(#b4b4b7, #878693, #b4b4b7);
+    padding: 5px;
+}
+
+#box-3 #tech {
+    background: linear-gradient(to right, white , #daccd9);
+    width: 100%;
+    height: 250px;
+    display: inline-block;
+}
+
+#box-3 #tech img {
+    width: 16%;
 }
 
 #contact {
     background: #c0c0c0;
+    padding: 5px;
     display: block;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact img {
+    width: 12px;
 }
