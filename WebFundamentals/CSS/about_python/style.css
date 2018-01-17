@@ -1,0 +1,111 @@
+body {
+    width: 970px;
+    font-family: Arial;
+}
+
+#blue {
+    background: #265175;
+}
+
+#top {
+    background: #265175;
+}
+
+#top img {
+    width: 400px;
+}
+
+#navbar {
+    background: linear-gradient(#3776ab, #487eab, #3776ab);
+    width: 775px;
+    margin: auto;
+    box-shadow: 2px 2px;
+    border-radius: 5px;
+}
+
+#navbar a {
+    color: white;
+    font-size: 18px;
+    text-justify: auto;
+    text-decoration: none;
+    padding: 24px;
+    display: inline-block;
+}
+
+#menu {
+    background: #265175;
+    width: 225px;
+    height: 300px;
+    margin-left: 45px;
+    display: inline-block;
+}
+
+#menu a {
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+#content {
+    background: #265175;
+    color: white;
+    width: 600px;
+    height: 300px;
+    margin-right: 100px;
+    float: right;
+}
+
+#content .poem {
+    color: #ffd343;
+    font-style: italic;
+    text-align: center;
+}
+
+#getting-started {
+    width: 450px;
+    margin-left: 25px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+}
+
+#getting-started #gs-topbar {
+    background: #75a8d3;
+}
+
+#getting-started a {
+    color: #75a8d3;
+    text-decoration: none;
+}
+
+#applications {
+    width: 450px;
+    margin-right: 25px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+}
+
+#applications a {
+    color: #75a8d3;
+    text-decoration: none;
+}
+
+#footer {
+    background: linear-gradient(#275276, #3776ab);
+}
+
+#footer a {
+    color: #75a8d3;
+    text-justify: auto;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 16px;
+    display: inline-block;
+}
+
+#footer .copyright {
+    color: #75a8d3;
+    text-align: center;
+}
