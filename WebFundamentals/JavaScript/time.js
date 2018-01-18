@@ -1,6 +1,6 @@
-var HOUR = 5;
-var MINUTE = 58;
-var PERIOD = "AM";
+var HOUR = 7;
+var MINUTE = 15;
+var PERIOD = "PM";
 
 if (MINUTE < 30) {
     var timing = "just after";
