@@ -1,0 +1,142 @@
+body {
+    font-family: Arial;
+    padding: 0;
+	margin: 0;
+}
+
+a {
+    color: #129db2;
+    text-decoration: none;
+}
+
+#header {
+    font-size: 32px;
+}
+
+#header img {
+    width: 5%;
+    position: relative;
+    top: 25px;
+    left: 0px;
+}
+
+#header #www-span {
+    background: linear-gradient(#28679d, #5585ab, #28679d);;
+    color: white;
+    padding: 12px;
+}
+
+#body {
+    background: linear-gradient(#e3e3e3, #ffffff);
+}
+
+#body #left {
+    width: 25%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+#body #left .advert {
+    display: inline;
+}
+
+#body #left .internet {
+    color: red;
+}
+
+#body #left .video-link {
+    background: linear-gradient(#5e94be, #26669c);
+    color: white;
+    padding: 12px 18px;
+    margin: 0 auto;
+}
+
+#body #left .resources-link {
+    background: linear-gradient(#e9ac5d, #ee7302);
+    color: white;
+    padding: 12px 18px;
+    margin: 0 auto;
+}
+
+#body #left #advert {
+    background-image: url('images/ad_background.png');
+}
+
+#body #left #advert .advert-text {
+    position: relative;
+    color: white;
+    font-size: 32pt;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+}
+
+#body #left #advert .ninja {
+    position: relative;
+    width: 33%;
+    top: 0px;
+    left: 33%;
+}
+
+#body #left #advert .learnmore-link {
+    background: linear-gradient(#7ed0de, #01c1dd);
+    color: white;
+    padding: 12px 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 37.5%;
+}
+
+#body #content {
+    width: 70%;
+    display: inline-block;
+}
+
+#body #content h2 {
+    color: #26669c;
+}
+
+#body #content #left {
+    display: inline-block;
+}
+
+#body #content #left img {
+    width: 5%;
+}
+
+#body #content #right {
+    text-align: right;
+    display: inline-block;
+}
+
+#body #content #right img {
+    width: 10%;
+}
+
+#body #content #right a {
+    color: #00c0dd;
+}
+
+#body #content #main img {
+    margin: 0 auto;
+    width: 25%;
+    display: block;
+}
+
+#body #content #box {
+    border: 5px solid #0087dd;
+    border-bottom: none;
+}
+
+#body #content #box .html {
+    margin: auto;
+    float: left;
+}
+
+#body #content #box img {
+    width: 10%;
+    display: inline-block;
+}
