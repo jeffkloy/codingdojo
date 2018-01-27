@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Disappearing Ninja</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"copy></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('img').click(function(){
+                    $(this).hide();
+                });
+                $('.restore').click(function(){
+                    $('img').show();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>Disappearing Ninja</h1>
+        <img src="https://avatars3.githubusercontent.com/u/2845063">
+        <img src="https://avatars0.githubusercontent.com/u/1024025">
+        <img src="https://avatars2.githubusercontent.com/u/383485?">
+        <img src="https://avatars3.githubusercontent.com/u/2845063">
+        <img src="https://avatars0.githubusercontent.com/u/1024025">
+        <img src="https://avatars2.githubusercontent.com/u/383485?">
+        <img src="https://avatars3.githubusercontent.com/u/2845063">
+        <img src="https://avatars0.githubusercontent.com/u/1024025">
+        <p></p>
+        <button class="restore">Restore</button>
+    </body>
+
+</html>
