@@ -1,0 +1,22 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+.right {
+    left: 500px;
+    top: 10px;
+    position: fixed;
+    display: inline-block;
+}
+
+.contact {
+    background: #ddeeff;
+    padding: 20px;
+    margin: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
