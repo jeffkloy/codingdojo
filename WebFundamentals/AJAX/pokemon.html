@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pokemon</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('form').submit(function() {
+                    $('.pkmn').append(function() {
+                        var str = "";
+                        for (i = 0; i <= 151; i++) {
+                            str += '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">';
+                        }
+                        return str;
+                    })
+                    return false;
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="submit" value="Load all 151 Pokemon">
+        </form>
+        <div class="pkmn">
+            <!-- Dynamic content -->
+        </div>
+    </body>
+</html>
