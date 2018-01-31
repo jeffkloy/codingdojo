@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pokedex</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.pokemon').append(function() {
+                    var str = "";
+                    for (i = 1; i <= 151; i++) {
+                        str += '<img id="' + i + '" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">';
+                    };
+                    return str;
+                });
+
+                $('img').click(function(){
+                    $.get("https://pokeapi.co/api/v2/pokemon/" + $(this).attr("id") + "/", function(res){
+                        var pkmn = `<h1 align="center">${res.name}</h1><p align="center">${res.types[0].type.name}<br> ${res.height} cm<br> ${res.weight} kg</p>`;
+                        $('.results').html(pkmn);
+                    });
+                })
+            })
+        </script>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: Arial;
+            }
+
+            .pokemon {
+                float: left;
+                width: 732px;
+                background: #e1e1e1;
+                display: inline-block;
+            }
+
+            .pokedex {
+                width: 244px;
+                display: inline-block;
+            }
+
+            .results {
+                width: 100%;
+                background: red;
+                border: 25px;
+                padding: 25px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pokemon"><!-- Dynamic content --></div>
+        <div class="pokedex">
+            <div class="results"><!-- Dynamic content --></div>
+        </div>
+    </body>
+</html>
