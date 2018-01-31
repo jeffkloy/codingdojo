@@ -15,7 +15,7 @@
 
                 $('img').click(function(){
                     $.get("https://pokeapi.co/api/v2/pokemon/" + $(this).attr("id") + "/", function(res){
-                        var pkmn = `<h1 align="center">${res.name}</h1><p align="center">${res.types[0].type.name}<br> ${res.height} cm<br> ${res.weight} kg</p>`;
+                        var pkmn = `<h1 align="center">${res.name}</h1><p align="center">Type(s): ${res.types[0].type.name}<br> Height: ${res.height}<br> Weight: ${res.weight}</p>`;
                         $('.results').html(pkmn);
                     });
                 })
