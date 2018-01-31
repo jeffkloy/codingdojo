@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Weather Forecast</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('form').submit(function() {
+                    var apiKey = "60b0369167f250c81cc288860239c00a"
+                    $.get('https://api.openweathermap.org/data/2.5/weather?q=' + $('#location').val() + '&APPID=' + apiKey, function(res) {
+                        var fahrenheit = parseInt(`${res.main.temp}` * 9/5 - 459.67);
+                        var data = `<h1>` + $('#location').val() + `</h1><br>Temperature: ` + fahrenheit;
+                        $('.data').html(data);
+                    }, 'json');
+                    return false;
+                });
+            })
+        </script>
+        <style>
+            * {
+                font-family: Arial;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Weather Forecast</h1>
+        <form>
+            Location: <input type="text" id="location" name="location">
+            <input type="submit" id="submit" value="Search OpenWeatherMap">
+        </form>
+        <br>
+        <div class="data"><!-- Dynamic content --></div>
+    </body>
+</html>
