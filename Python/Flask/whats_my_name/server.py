@@ -4,11 +4,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    name = request.form['name']
-    return render_template('index.html', name=name)
+    return render_template('index.html')
 
-@app.route('/process')
+@app.route('/process', methods=['POST'])
 def process():
+    name = request.form['name']
+    print name
     return redirect('/')
 
 app.run(debug=True)
