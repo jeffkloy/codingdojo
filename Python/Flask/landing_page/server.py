@@ -7,7 +7,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/ninjas')
-def form():
+def ninjas():
     return render_template('ninjas.html')
 
 @app.route('/dojos/new')
