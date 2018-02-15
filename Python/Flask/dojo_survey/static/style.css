@@ -1,0 +1,9 @@
+h1 {
+    font-family: Arial;
+}
+
+#box-center {
+    width: 25%;
+    margin: 0 auto;
+    display: table;
+}
