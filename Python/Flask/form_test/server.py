@@ -20,7 +20,7 @@ def create_user():
     print "Got Post Info"
     session['name'] = request.form['name']
     session['email'] = request.form['email']
-    return redirect('/success')
+    return redirect('/show')
 
 @app.route('/users/<username>')
 def show_user_profile(username):
