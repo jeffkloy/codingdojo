@@ -1,5 +1,5 @@
 // BASIC 1
-x = [];
+var x = [];
 console.log(x);
 x.push('coding', 'dojo', 'rocks');
 x.pop();
@@ -18,8 +18,16 @@ z.pop();
 console.log(z);
 
 // BASIC 4
+let names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+for (let i = 0; i < names.length; i++) {
+    if (names[i].length >= 5) {
+        console.log(names[i]);
+    };
+};
+
+// BASIC 5
 function yell (string) {
     console.log(string.toUpperCase());
     return string.toUpperCase();
-}
+};
 yell('this is easy');
