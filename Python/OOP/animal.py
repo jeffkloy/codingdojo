@@ -24,9 +24,8 @@ class Dragon(Animal):
         print "Health -", self.health
         print "I am a Dragon"
 
-dog1 = Dog()
-
 print "Dog:"
+dog1 = Dog()
 dog1.walk() ## 150 - 1 = 149
 dog1.walk() ## 149 - 1 = 148
 dog1.walk() ## 148 - 1 = 147
