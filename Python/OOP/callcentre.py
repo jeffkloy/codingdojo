@@ -20,12 +20,13 @@ class CallCentre(object):
     def remove(self, call):
         self.calls.remove(self.calls)
     def info(self):
-        print "Name:", name, "Phone number:", number, "Queue length:", calls
+        for call in self.calls:
+            call.display()
 
 call1 = Call(1, "Jeff K.", "+1 415-555-1212", "Callback")
 call1.display()
 
 callcentre1 = CallCentre()
 callcentre1.add(1)
-callcentre1.remove()
+callcentre1.remove(call1)
 print callcentre1.info()
